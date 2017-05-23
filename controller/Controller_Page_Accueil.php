@@ -3,6 +3,6 @@ require_once '/model/User.php';
 
 require_once '/controller/Controller_Test_User.php';
 
-require '/view/accueil.php';
-onlineOnly();
+echo file_get_contents( '/view/accueil.php') ;
+//onlineOnly();
 ?>
