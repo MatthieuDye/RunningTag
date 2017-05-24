@@ -1,5 +1,5 @@
 <?php 
-	require_once '/model/Evt.php';
+	require_once '../model/Evt.php';
 
 	//ini_set('display_errors',1);
 
