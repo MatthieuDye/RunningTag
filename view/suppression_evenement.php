@@ -32,12 +32,7 @@
 			 } $premier_event->closeCursor(); // Termine le traitement de la requête
 			?>		
 
-			</br>
-			<a href="#up" > <image src="medias/uparrow.png" alt="Cliquez pour retourner au début du doc" title="Vous vous attendiez à quoi?"></a>
-
-			<h1 id="down" > Fin du doc </h1>
-
-			<?php include ('nav.php') ?>
+			<?php include 'nav.php' ?>
 			<?php if (isConnected()) include 'nav_Evenements.php' ?>
 
 

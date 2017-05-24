@@ -39,7 +39,7 @@
 
 			<h1 id="down" > Fin du doc </h1>
 
-			<?php include ('nav.php') ?>
+			<?php include 'nav.php' ?>
 			<?php if (isConnected()) include 'nav_Evenements.php' ?>
 
 
