@@ -3,7 +3,7 @@ function connexion()
 {
 	try
 	{
-		 $bd = new PDO('mysql:host=localhost;dbname=runningtag;charset=utf8', 'root', 'ximattEYD1996');
+		 $bd = new PDO('mysql:host=mysql-runningtagweb.alwaysdata.net;dbname=runningtagweb_v1;charset=utf8', '138803', 'runningTAG');
 	}
 	catch (Exception $e)
 	{

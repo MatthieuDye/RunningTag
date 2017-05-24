@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<?php require ("view/header.php");?>
+		//<?php require 'view/header.php';?>
 		<div class="container">
 			<h3>Changement de Mot de Passe </h3>
 			<div class="row z-depth-4 blue-grey lighten-5">
@@ -43,6 +43,6 @@
 			</div>
 			
 		</div>
-		<?php require ("view/footer.php");?>
+		<?php require 'view/footer.php';?>
 	</body>
 </html>

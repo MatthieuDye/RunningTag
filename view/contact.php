@@ -15,7 +15,7 @@
 <p> <a href="mailto:matthieudye@yahoo.fr">Send me an email!</a> </p>
 
 
-<?php include ('nav.php') ?>
+<?php include 'nav.php' ?>
 <?php include 'footer.php' ?>
 </body>
 

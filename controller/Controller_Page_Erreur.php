@@ -3,6 +3,6 @@
 
 $messageErreur = htmlspecialchars($_GET["erreur"]);
 
-require("view/page_erreur.php");
+require 'view/page_erreur.php';
 
 ?>

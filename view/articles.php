@@ -17,7 +17,7 @@
 </br>
 </br>
 <?php
-  require_once('/model/Pdo.php');
+  require_once 'model/Pdo.php';
   $bdRunningTag = connexion();
 
  $premiere_new = $bdRunningTag->query('SELECT * from news');

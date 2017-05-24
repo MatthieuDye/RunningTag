@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<title>Profil</title>
@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<?php require ("view/header.php");?>
+		<?php require 'view/header.php';?>
 		<div class="container">
 			<ul class="collection with-header">
 			    <li class="collection-header"><h4>Vos informations</h4></li>
@@ -25,11 +25,12 @@
 			</ul>
 		</div>
 		<a href="Modification_User.php" class="waves-effect waves-light btn">Modifier des informations ?</a>
-		<?php require ("view/footer.php");?>
+		<?php require 'view/footer.php';?>
 	</body>
 
 
 </html>
+
 <script src="jQuery.js"></script>
 <script src="materialize/js/materialize.js"></script>
 <script>

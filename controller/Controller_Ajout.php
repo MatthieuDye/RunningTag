@@ -1,7 +1,7 @@
 <?php 
-	require_once ('../model/Evt.php');
+	require_once '/model/Evt.php';
 
-	ini_set('display_errors',1);
+	//ini_set('display_errors',1);
 
 	$nomorga = htmlspecialchars($_POST['nomorga']);
 	$nomevent = htmlspecialchars($_POST['nomevent']);

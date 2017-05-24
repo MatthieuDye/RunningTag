@@ -1,5 +1,5 @@
 <?php
-require ("controller/Controller_Test_User.php");
+require 'controller/Controller_Test_User.php';
 offlineOnly();
-require "view/connexion.php";
+require 'view/connexion.php';
 ?>

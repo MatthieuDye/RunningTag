@@ -11,7 +11,7 @@
 				<h5 class="white-text">Liens</h5>
 				<ul>
 					<li> <a href="http://www.polytech-montpellier.fr/" target="_blank"> <image src="medias/logo.jpeg" > </a> 
-					<li> <a href="contact.php ?>"> Me contacter ! </a></li>
+					<li> <a href="Contact.php ?>"> Me contacter ! </a></li>
 				</ul>
 			</div>
 		</div>

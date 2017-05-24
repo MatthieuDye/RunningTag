@@ -33,11 +33,16 @@ Alors ...</br>
 ... <strong> Faites-le à plusieurs ! </strong> </br>
 </p>
 </body>
-
-
-</body>
-<?php include 'nav.php' ?>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 <?php include 'footer.php' ?>
-</html>
+<?php include 'nav.php' ?>
+</body>
 
+</html>

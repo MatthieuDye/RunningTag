@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+	<html>
 
-<head>
+		<head>
 
-<meta charset="utf-8" />
-<link rel="stylesheet" href="css/style.css" />
-<title>RECETTES</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>RECETTES</title>
 
-</head>
-
-
-<body>
+		</head>
 
 
-<?php include ('nav.php') ?>
-<?php if (isConnected()) include ('nav_Recettes.php') ?>
-</body>
+		<body>
 
-</html>
+
+		<?php include 'nav.php'; ?>
+		<?php if (isConnected()) include 'nav_Recettes.php' ?>
+		</body>
+
+	</html>

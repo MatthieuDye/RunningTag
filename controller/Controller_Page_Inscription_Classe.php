@@ -1,6 +1,6 @@
 <?php
-require_once ('model/Grade.php');
-require_once ("controller/Controller_Test_User.php");
+require_once 'model/Grade.php';
+require_once 'controller/Controller_Test_User.php';
 offlineOnly();
 
 $GradeCode = htmlspecialchars($_POST['code']);
@@ -19,7 +19,7 @@ if(is_null($gradeId))
 }
 else
 {
-	require_once ("view/inscription_classe.php");
+	require_once 'view/inscription_classe.php';
 }
 
 

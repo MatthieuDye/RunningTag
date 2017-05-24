@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		
-		<?php require ("view/header.php");?>
+		<?php require 'view/header.php';?>
 		
 		<div class="container">
 			<h5 class="center-align">Inscription Polytech</h5>
@@ -71,7 +71,7 @@
 				</form>
 			</div>
 		</div>
-		<?php require ("view/footer.php");?>
+		<?php require 'view/footer.php';?>
 		
 	</body>
 </html>

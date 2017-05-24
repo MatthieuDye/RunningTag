@@ -19,6 +19,6 @@
 			<p><?php echo $messageErreur; ?></p>
 			<a class="btn waves-effect waves-light" href="javascript:history.back()"> Retour </a>	
 		</div>
-		<?php require ("footer.php");?>
+		<?php require 'footer.php';?>
 	</body>
 </html>

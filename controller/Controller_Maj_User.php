@@ -1,6 +1,6 @@
 <?php
 
-require_once ("../model/User.php");
+require_once 'model/User.php';
 
 	$cookieId = $_COOKIE['codeconnexion'];
 

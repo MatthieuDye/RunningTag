@@ -18,7 +18,7 @@ Vous non plus la perspective de courir seul pendant une heure ne vous enchante g
 Alors ...</br>
 ... <strong> Faites-le à plusieurs ! </strong> </br>
 
-<?php include ('nav.php') ?>
+<?php include 'nav.php' ?>
 
 
 <a href="http://www.polytech-montpellier.fr/" target="_blank"> <image src="pictures/logo.jpeg" > </a>

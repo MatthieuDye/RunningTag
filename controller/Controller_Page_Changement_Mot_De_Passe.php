@@ -1,9 +1,9 @@
 <?php
-require_once ("controller/Controller_Test_User.php");
+require_once 'controller/Controller_Test_User.php';
 offlineOnly();
 
 
-require_once('model/User.php');
+require_once 'model/User.php' ;
 
 
 $code = htmlspecialchars($_GET['code']);
@@ -19,7 +19,7 @@ if (empty($id))
 }
 else
 {
-	require_once("view/changement_mot_de_passe.php");
+	require_once 'view/changement_mot_de_passe.php';
 }
 
 

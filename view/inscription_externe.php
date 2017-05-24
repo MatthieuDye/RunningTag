@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<title>Inscription Externe</title>
+		<title>INSCRIPTION</title>
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
 		<meta name="Description" content="Formulaire d'inscription pour une personne extérieur à l'école d'ingénieur Polytech Montpellier">
@@ -80,7 +80,7 @@
 
 		</div>
 
-		<?php require ("view/footer.php");?>
+		<?php require 'view/footer.php';?>
 	</body>
 </html>
 

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="css/style.css" />
-<?php require_once ("model/User.php"); ?>
+<?php require_once 'model/User.php'; ?>
 
 <nav id="menu">
     <ul>

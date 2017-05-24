@@ -50,9 +50,9 @@ Créez un évènement !</br>
         </div>
       </form>
 
-      <?php include ('nav.php') ?>
+      <?php include 'nav.php' ?>
 
 
-          <?php require ("view/footer.php");?>
+          <?php require 'view/footer.php';?>
   </body>
 </html>

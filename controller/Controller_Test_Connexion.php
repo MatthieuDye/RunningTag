@@ -1,8 +1,8 @@
 <?php
-require_once ("model/User.php");
+require_once 'model/User.php';
 
 
-function isConnected()
+function isConnected() //Indique si un utilisateur est connecté.
 {
 	if (isset($_COOKIE["codeconnexion"]))
 	{
@@ -24,27 +24,27 @@ function isConnected()
 		return false;
 	}
 }
-//Indique si un utilisateur est connecté.
 
-function onlineOnly()
+
+function onlineOnly() //Pour les pages autorisées seulement par les utilisateurs connectés. Renvoie à la connexion sinon
 {
 	if(!isConnected())
 	{
 		header("Location: Connexion.php");
 	}
 }
-//Pour les pages autorisées seulement par les utilisateurs connectés. Renvoie à la connexion sinon
 
-function offlineOnly()
+
+function offlineOnly()//Pour les pages autorisées seulement par les utilisateurs non connectés. Renvoie à la page d"accueil sinon
 {
 	if(isConnected())
 	{
 		header("Location: Accueil.php");
 	}		
 }
-//Pour les pages autorisées seulement par les utilisateurs non connectés. Renvoie à la page d"accueil sinon
 
-function adminOnly()
+
+function adminOnly() //Pour les pages seulements autorisées par un admin, sinon renvoie à l"accueil
 {
 	if(isConnected())
 	{
@@ -61,7 +61,7 @@ function adminOnly()
 		header("Location: Accueil.php");
 	}
 }
-//Pour les pages seulements autorisées par un admin, sinon renvoie à l"accueil
+
 
 if(isConnected())
 {

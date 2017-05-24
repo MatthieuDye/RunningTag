@@ -40,6 +40,6 @@
 				</form>
 			</div>
 		</div>
-		<?php require ("view/footer.php");?>
+		<?php require 'view/footer.php';?>
 	</body>
 </html>

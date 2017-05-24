@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<title>Modification</title>
+		<title>MODIFICATIONS</title>
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
 		<meta name="Description" content="Modifications des données personnels">
@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<?php require ("view/header.php");?>
+		<?php require 'view/header.php';?>
 		<div class="container">
 			<h5 class="center-align">Modification</h5>
 			<div class="row z-depth-4 blue-grey lighten-5">
@@ -55,6 +55,6 @@
 				</form>
 			</div>
 		</div>
-		<?php require ("view/footer.php");?>
+		<?php require 'view/footer.php';?>
 	</body>
 </html>

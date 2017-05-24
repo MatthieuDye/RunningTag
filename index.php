@@ -1,3 +1,2 @@
 <?php 
-ini_set('display_errors',1);
-require_once 'Accueil.php'; 
+header('Location: Accueil.php');
