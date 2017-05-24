@@ -28,6 +28,7 @@
 			  <p> Voici l'évènement n°<?php echo $donnees['idEvt']; ?> , organisé par <?php echo $donnees['orgaEvt']; ?>, à <?php echo $donnees['lieuEvt']; ?></br>
 			  <?php echo $donnees['libelleEvt']; ?></br>
 			  <?php echo $donnees['commentEvt']; ?></br>
+			  
 			  </p>	
 
 			<?php
