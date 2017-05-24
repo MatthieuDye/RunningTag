@@ -1,7 +1,5 @@
 '<?php
-	require_once 'model/User.php';
-	require_once 'model/Evt.php';
-
+	require_once '../model/User.php';
 
 	$name = htmlspecialchars($_POST['name']);
 	$firstName = htmlspecialchars($_POST['firstname']);

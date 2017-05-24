@@ -15,18 +15,18 @@ Créez un évènement !</br>
 
  <div class="container">
  <div class="row z-depth-4 blue-grey lighten-5">
-        <form class="col s12" method="post" action="controller/Controller_Ajout.php">
+        <form class="col s12" method="post" action="controller/Controller_Ajout_Recette.php">
         
         <div class="row">
             <div class="input-field col s9">
-            <label for="nomrec" data-error="wrong" data-success="right">Nom de la recette</label> </br>
-              <input id="nomrec" name="nomrec" type="text" class="validate">
+            <label for="nomrce" data-error="wrong" data-success="right">Nom de la recette</label> </br>
+              <input id="nomrce" name="nomrce" type="text" class="validate">
             </div>
         </div>
 
         <div class = row>
-            <label for="description">Rédigez votre recette : </label></br>
-            <textarea rows="10" cols="50" name="description" id="description"></textarea>
+            <label for="contentrce">Rédigez votre recette : </label></br>
+            <textarea rows="10" cols="50" name="contentrce" id="contentrce"></textarea>
         </div>
 
         <div class="row">
