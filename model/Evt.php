@@ -24,4 +24,22 @@
 		}
 		*/
 	}
+
+	public static function Delete_Evt($idevent ,$idauteur) {
+		require_once('Pdo.php');
+
+		$bdRunningTag = connexion();
+
+		$req = $bdRunningTag->prepare('DELETE from event' );
+		$returnValue = $req->execute();
+		/*
+		if($returnValue) {
+			return true;
+		}
+		else {
+			
+			return false;
+		}
+		*/
+	}
 }

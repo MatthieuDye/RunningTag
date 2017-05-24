@@ -26,8 +26,9 @@
 			  <p> Voici l'évènement n°<?php echo $donnees['idEvt']; ?> , organisé par <?php echo $donnees['orgaEvt']; ?>, à <?php echo $donnees['lieuEvt']; ?></br>
 			  <?php echo $donnees['libelleEvt']; ?></br>
 			  <?php echo $donnees['commentEvt']; ?></br>
+			  
 			  <form class="supprimer" method="post" action="controller/Controller_Suppression_Evenement.php">
-			 	
+			  <input type="hidden" name="ideventsupp" value="<?php echo $donnees['idEvt']?>" />
 			  <button class="btn-supprimer" name="supprimer">Supprimer ?</button>
 			  </form>
 			  </p>	
