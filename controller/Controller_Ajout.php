@@ -1,6 +1,6 @@
 <?php 
 	require_once '../model/Evt.php';
-
+	require_once '../model/User.php';
 	//ini_set('display_errors',1);
 
 	$nomorga = htmlspecialchars($_POST['nomorga']);
@@ -15,7 +15,8 @@
 	}
 	
 	else {
-		Evt::Add_Evt($nomevent,$nomorga,$description,$lieu);	
+		$id = User::Get_User_Id($_COOKIE['codeconnexion']);
+		Evt::Add_Evt($nomevent,$nomorga,$description,$lieu,$id);	
 
 		$messageValidation = "L'évènement a été créé avec succès !";
 		header("Location: ../Validation.php?validation=".$messageValidation);

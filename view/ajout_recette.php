@@ -11,7 +11,7 @@
 </head>
 
 <body>
-Créez un évènement !</br>
+Rédigez une recette !</br>
 
  <div class="container">
  <div class="row z-depth-4 blue-grey lighten-5">

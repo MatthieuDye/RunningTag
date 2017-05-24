@@ -10,7 +10,7 @@
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text">Liens</h5>
 				<ul>
-					<li> <a href="http://www.polytech-montpellier.fr/" target="_blank"> <image src="medias/logo.jpeg" > </a> 
+					<li> <a href="http://www.polytech-montpellier.fr/" target="_blank"> Polytech Montpellier </a> 
 					<li> <a href="Contact.php ?>"> Me contacter ! </a></li>
 				</ul>
 			</div>

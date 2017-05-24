@@ -16,9 +16,9 @@
 	else {
 		Rce::Add_Rce($nomrce,$contentrce);	
 
-		$messageValidation = "La recette a été ajoutée avec succès !";
-		header("Location: ../Validation.php?validation=".$messageValidation);
-		/*
+		//$messageValidation = "La recette a été ajoutée avec succès !";
+		//header("Location: ../Validation.php?validation=".$messageValidation);
+		
 		if ($returnValue)
 		{
 			header("Location: ../Accueil.php"); // ramener à une page de confirmation	
@@ -28,6 +28,7 @@
 			$messageErreur = "Erreur lors de l'insertion ";
 		
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
-		}*/
+
+		}
 	}
 ?>

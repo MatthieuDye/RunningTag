@@ -24,7 +24,7 @@
 		 {
 		  ?>
 		  <p> Voici la recette de <?php echo $donnees['titleRcpe']; ?> </br>
-		  <?php echo $donnees['ciontentRcpe']; ?></br>
+		  <?php echo $donnees['contentRcpe']; ?></br>
 		  </p>
 
 		<?php

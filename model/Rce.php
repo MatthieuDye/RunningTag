@@ -5,14 +5,14 @@
 
 		$bdRunningTag = connexion();
 
-		$req = $bdRunningTag->prepare('INSERT INTO recipe (titleRcpe, contentRcpe) VALUES (:nomrecette, :texterecette,)');
+		$req = $bdRunningTag->prepare('INSERT INTO recipe (titleRcpe, contentRcpe) VALUES (:nomrecette, :texterecette)');
 		$req->bindParam(':nomrecette',$nomrecette);
 		$req->bindParam(':texterecette',$texterecette);
 		
 
 		$returnValue = $req->execute();
-		//var_dump($returnValue);
-		/*
+		var_dump($returnValue);
+		
 		if($returnValue) {
 			return true;
 		}
@@ -20,6 +20,5 @@
 			var_dump($req->errorInfo());
 			return false;
 		}
-		*/
 	}
 }

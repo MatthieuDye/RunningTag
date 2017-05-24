@@ -13,7 +13,7 @@
 
 <body id="accueil">
 <p>
-<?php 
+<?php /*
 $test = false;
 //var_dump(isConnected());
 var_dump($_COOKIE);
@@ -24,7 +24,7 @@ if ($test) {
 	$cookieperso = $_COOKIE["codeconnexion"]; 
 	$id = User::Get_User_Id($cookieperso);
 	var_dump($id); 
-		}
+		}*/
 	?>
 Vous non plus vous n'arrivez pas à vous mettre au sport ? </br>
 Vous non plus vous n'aimez pas transpirer pour rien ? </br>
