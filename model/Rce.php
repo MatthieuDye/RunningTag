@@ -12,7 +12,7 @@
 
 		$returnValue = $req->execute();
 		var_dump($returnValue);
-		
+		/*
 		if($returnValue) {
 			return true;
 		}
@@ -20,5 +20,6 @@
 			var_dump($req->errorInfo());
 			return false;
 		}
+		*/
 	}
 }

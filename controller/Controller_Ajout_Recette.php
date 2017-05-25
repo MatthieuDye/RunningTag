@@ -19,13 +19,13 @@
 		//$messageValidation = "La recette a été ajoutée avec succès !";
 		//header("Location: ../Validation.php?validation=".$messageValidation);
 		
-		if ($returnValue)
+		if (!$returnValue)
 		{
 			header("Location: ../Accueil.php"); // ramener à une page de confirmation	
 		}	
 		
 		else {
-			$messageErreur = "Erreur lors de l'insertion ";
+			$messageErreur = "Erreur lors de la création de la recette ";
 		
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 

@@ -53,9 +53,9 @@ $premiere_new->closeCursor(); // Termine le traitement de la requête
 <h1 id="down" > Fin du doc </h1>
 
 		<?php require 'footer.php';?>
-		<?php require 'nav.php';?>
-
-
+	
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
 <a href="http://www.polytech-montpellier.fr/" target="_blank"> <image src="medias/logo.jpeg" > </a>

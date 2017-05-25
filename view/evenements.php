@@ -40,12 +40,8 @@
 
 			<h1 id="down" > Fin du doc </h1>
 
-			<?php include 'nav.php' ?>
-			<?php if (isConnected()) include 'nav_Evenements.php' ?>
-
-
-
 			<?php include 'footer.php' ?>
 			</body>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 	</html>

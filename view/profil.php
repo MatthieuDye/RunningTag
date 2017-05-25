@@ -5,8 +5,6 @@
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
 		<meta name="Description" content="Gérez vos informations personnels et modifiez votre mot de passe ">
-		<meta name="Keywords" content="test profil riasec hollande personnalité polytech intérêts professionnels">
-		<meta name="Subject" content="Test Riasec ">
 		<meta name="Copyright" content="PolytechMontpellier">
 		<meta name="Author" content="PolytechMontpellier">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +29,8 @@
 
 
 </html>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 <script src="jQuery.js"></script>
 <script src="materialize/js/materialize.js"></script>
 <script>

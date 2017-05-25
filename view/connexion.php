@@ -5,8 +5,6 @@
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
 		<meta name="Description" content="Page de connexion ">
-		<meta name="Keywords" content="test riasec hollande personnalité polytech montpellier questionnaire intérêts professionnels">
-		<meta name="Subject" content="Test Riasec ">
 		<meta name="Copyright" content="PolytechMontpellier">
 		<meta name="Author" content="PolytechMontpellier">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,7 +76,7 @@
 			</div>
 		</div>
 		<?php require 'view/footer.php';?>
-
-<?php include 'nav.php'; ?>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 	</body>
 </html>

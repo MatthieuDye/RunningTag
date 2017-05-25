@@ -44,7 +44,8 @@ Rédigez un article !</br>
         </div>
       </form>
 
-      <?php include 'nav.php' ?>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
           <?php require 'view/footer.php';?>

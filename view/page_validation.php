@@ -20,7 +20,7 @@
 			<a class="btn waves-effect waves-light" href="javascript:history.back()"> Retour </a>	
 		</div>
 				<?php require 'footer.php';?>
-		<?php require 'nav.php';?>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 	</body>
 </html>
