@@ -19,6 +19,8 @@
 			<p><?php echo $messageValidation; ?></p>
 			<a class="btn waves-effect waves-light" href="javascript:history.back()"> Retour </a>	
 		</div>
-		<?php require 'view/footer.php';?>
+				<?php require 'footer.php';?>
+		<?php require 'nav.php';?>
+
 	</body>
 </html>

@@ -2,9 +2,9 @@
 
 <nav id="menu">
     <ul>
-        <li><a href="Ajout_Recette.php"> Ajouter une recette </a></li>
-        <li><a href="Suppression_Recette.php"> Supprimer une recette </a></li>
-        <li><a href="Modification_Recette.php"> Modifier une recette </a></li>
+        <li><a href="Ajout_Recette.php"> Ajouter un article </a></li>
+        <li><a href="Suppression_Recette.php"> Supprimer un article </a></li>
+        <li><a href="Modification_Recette.php"> Modifier un article </a></li>
       
     </ul>
 </nav>

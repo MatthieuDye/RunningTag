@@ -2,7 +2,7 @@
 require_once 'model/User.php';
 
 require_once 'controller/Controller_Test_User.php';
-offlineOnly();
+//offlineOnly();
 require 'view/contact.php';
 
 ?>

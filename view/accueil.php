@@ -40,9 +40,9 @@ Alors ...</br>
 </br>
 </br>
 </br>
+		<?php require 'footer.php';?>
+		<?php require 'nav.php';?>
 
-<?php include 'footer.php' ?>
-<?php include 'nav.php' ?>
 </body>
 
 </html>

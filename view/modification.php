@@ -55,6 +55,7 @@
 				</form>
 			</div>
 		</div>
-		<?php require 'view/footer.php';?>
+		<?php require 'footer.php';?>
+		<?php require 'nav.php';?>
 	</body>
 </html>

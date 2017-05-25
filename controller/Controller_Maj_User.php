@@ -11,6 +11,12 @@ require_once '../model/User.php';
 	$mail = htmlspecialchars($_POST['email']);
 	$mailverif=User::Check_Mail($mail);
 
+	$user = User::Get_User($id);
+	if (empty($name)) { $name = $user['lastNameUser'];}
+		if (empty($firstName)) { $firstName = $user['firstNameUser'];}
+			if (empty($gender)) { $gender = $user['genderUser'];}
+				if (empty($mail)) { $mail = $user['mailUser'];}
+
 
 	if (empty($name) || empty($firstName) || empty($gender) || empty($mail) ) {
 		$messageErreur = "Vous n'avez pas remplis tous les champs ! Merci de completer les champs manquants ! ";

@@ -52,8 +52,9 @@ $premiere_new->closeCursor(); // Termine le traitement de la requête
 
 <h1 id="down" > Fin du doc </h1>
 
-<?php include ('nav.php') ?>
-<?php if (isConnected()) include ('nav_Articles.php') ?>
+		<?php require 'footer.php';?>
+		<?php require 'nav.php';?>
+
 
 
 

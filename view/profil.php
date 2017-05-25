@@ -14,18 +14,19 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<?php require 'view/header.php';?>
 		<div class="container">
 			<ul class="collection with-header">
 			    <li class="collection-header"><h4>Vos informations</h4></li>
-			    <li class="collection-item"><?php echo $info['User_Name'] ?></li>
-			    <li class="collection-item"><?php echo $info['User_First_Name'] ?></li>
-			    <li class="collection-item"><?php echo $info['User_Gender'] ?></li>
-			    <li class="collection-item"><?php echo $info['User_Mail'] ?></li>
+			    <li class="collection-item"><?php echo $info['firstNameUser'] ?></li>
+			    <li class="collection-item"><?php echo $info['lastNameUser'] ?></li>
+			    <li class="collection-item"><?php echo $info['genderUser'] ?></li>
+			    <li class="collection-item"><?php echo $info['mailUser'] ?></li>
 			</ul>
 		</div>
 		<a href="Modification_User.php" class="waves-effect waves-light btn">Modifier des informations ?</a>
-		<?php require 'view/footer.php';?>
+		<?php require 'footer.php';?>
+		<?php require 'nav.php';?>
+
 	</body>
 
 

@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="css/style.css" />
-		<title>VOS EVENEMENT</title>
+		<title>MES EVENEMENT</title>
 
 		</head>
 
@@ -33,6 +33,12 @@
 			  </form>
 			  </p>	
 
+			  <form class="modifier" method="post" action="controller/Controller_Modification_Evenement.php">
+			  <input type="hidden" name="ideventmodif" value="<?php echo $donnees['idEvt']?>" />
+			  <button class="btn-modif" name="modifier">Modifier ?</button>
+			  </form>
+			  </p>	
+
 			<?php
 			 } $premier_event->closeCursor(); // Termine le traitement de la requête
 			?>		
@@ -42,7 +48,9 @@
 
 
 
-			<?php include 'footer.php' ?>
+					<?php require 'footer.php';?>
+		<?php require 'nav.php';?>
+
 			</body>
 
 	</html>

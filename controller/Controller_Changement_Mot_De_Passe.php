@@ -1,5 +1,5 @@
 <?php
-	require_once 'model/User.php';
+	require_once '../model/User.php';
 
 
 	
@@ -57,7 +57,7 @@
 		}
 		else
 		{
-			$password = sha1(sha1($password));
+			$password = password_hash($password, PASSWORD_BCRYPT);
 			User::Update_Password($id,$password);
 			require_once("Controller_Deconnexion.php");
 		}

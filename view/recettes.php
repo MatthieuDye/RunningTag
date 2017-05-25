@@ -54,6 +54,8 @@
 		<h3> <a href="contact.html"> Me contacter !</br> </a> </h3>
 		</body>
 
+		<?php require 'footer.php';?>
+	
 
 		<?php include 'nav.php'; ?>
 		<?php if (isConnected()) include 'nav_Recettes.php' ?>

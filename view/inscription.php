@@ -40,6 +40,7 @@
 				</form>
 			</div>
 		</div>
-		<?php require 'view/footer.php';?>
+		<?php include 'footer.php' ?>
+<?php include 'nav.php' ?>
 	</body>
 </html>

@@ -27,6 +27,7 @@ Alors ...</br>
 
 
 <?php include 'footer.php' ?>
+<?php include 'nav.php' ?>
 
 </body>
 

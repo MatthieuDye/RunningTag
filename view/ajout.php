@@ -53,6 +53,6 @@ Créez un évènement !</br>
       <?php include 'nav.php' ?>
 
 
-          <?php require 'view/footer.php';?>
+          <?php require 'footer.php';?>
   </body>
 </html>

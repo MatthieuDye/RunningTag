@@ -8,6 +8,6 @@ require_once 'model/User.php';
 	$id = User::Get_User_Id($cookieId);
 	$info = User::Get_User($id);
 
-require '"view/modification_User.php';
+require 'view/modification_user.php';
 
 ?>
