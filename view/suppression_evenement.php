@@ -33,7 +33,7 @@
 			  </form>
 			  </p>	
 
-			  <form class="modifier" method="post" action="controller/Controller_Modification_Evenement.php">
+			  <form class="modifier" method="post" action="../Modification_Evenement.php">
 			  <input type="hidden" name="ideventmodif" value="<?php echo $donnees['idEvt']?>" />
 			  <button class="btn-modif" name="modifier">Modifier ?</button>
 			  </form>

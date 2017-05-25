@@ -1,5 +1,5 @@
 <?php
-	require_once 'model/User.php';
+	require_once '../model/User.php';
 
 
 	
@@ -21,14 +21,14 @@
 		
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
-	elseif (is_null($mailverif['User_Id'])) {
+	elseif (is_null($mailverif['idUser'])) {
 		$messageErreur = "Ce mail n'est pas associé à un compte !";
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
 	else
 	{
 		
-		$cookie=$mailverif['User_Cookie_Code'];
+		$cookie=$mailverif['cookieCode'];
 		include_once("../email/Email_Mot_De_Passe_Oublie.php");
 
 		$messageValidation = "Un mail contenant un lien de reinitialisation vient de vous être envoyé !  ";
