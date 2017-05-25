@@ -30,7 +30,11 @@
 
 		$bdRunningTag = connexion();
 
-		$req = $bdRunningTag->prepare('DELETE from event' );
+		$req = $bdRunningTag->prepare('DELETE from event WHERE idOrga = :idauteur && idEvt = :idevent ' );
+
+		$req->bindParam(':idauteur',$idauteur);		
+		$req->bindParam(':idevent',$idevent);
+		
 		$returnValue = $req->execute();
 		/*
 		if($returnValue) {
