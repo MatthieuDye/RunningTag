@@ -26,22 +26,30 @@
 
    			$bdRunningTag = connexion();
 
-			 $premier_recette = $bdRunningTag->query(" SELECT * from recipe WHERE '$id'=event.idOrga ");
+			 $premier_recette = $bdRunningTag->query(" SELECT * from recipe, user WHERE '$id'=recipe.idAuthor && '$id' = user.idUser");
 			 while ($donnees = $premier_event->fetch())
 			 {
 			  ?>
-			  <p> Voici l'évènement n°<?php echo $donnees['idEvt']; ?> , organisé par <?php echo $donnees['orgaEvt']; ?>, à <?php echo $donnees['lieuEvt']; ?></br>
-			  <?php echo $donnees['libelleEvt']; ?></br>
-			  <?php echo $donnees['commentEvt']; ?></br>
+
+			<p> Voici la recette de <?php echo $donnees['firstNameUser']; ?> : <?php echo $donnees['titleRcpe']; ?> </br>
+		  	<?php echo $donnees['contentRcpe']; ?></br>
+		  	</p>
+
+		<?php
+		}
+
+		$premiere_new->closeCursor(); // Termine le traitement de la requête
+
+		?>
 			  
-			  <form class="supprimer" method="post" action="controller/Controller_Suppression_Evenement.php">
-			  <input type="hidden" name="ideventsupp" value="<?php echo $donnees['idEvt']?>" />
+			  <form class="supprimer" method="post" action="controller/Controller_Suppression_Recette.php">
+			  <input type="hidden" name="ideventsupp" value="<?php echo $donnees['idRcpe']?>" />
 			  <button class="btn-supprimer" name="supprimer">Supprimer ?</button>
 			  </form>
 			  </p>	
 
-			  <form class="modifier" method="post" action="../Modification_Evenement.php">
-			  <input type="hidden" name="ideventmodif" value="<?php echo $donnees['idEvt']?>" />
+			  <form class="modifier" method="post" action="../Modification_Recette.php">
+			  <input type="hidden" name="ideventmodif" value="<?php echo $donnees['idRcpe']?>" />
 			  <button class="btn-modif" name="modifier">Modifier ?</button>
 			  </form>
 			  </p>	
