@@ -16,18 +16,17 @@
 		//$id = User::Get_User_Id($_COOKIE['codeconnexion']);
 		Rce::Update_Rce($nomrecette,$description,$idrecipemodif);	
 
-		$messageValidation = "L'évènement a été créé avec succès !";
-		header("Location: ../Validation.php?validation=".$messageValidation);
-		/*
+		
+		
 		if ($returnValue)
 		{
-			header("Location: ../Accueil.php"); // ramener à une page de confirmation	
+			$messageValidation = "La recette a été modifiée avec succès !";
+			header("Location: ../Validation.php?validation=".$messageValidation);
 		}	
 		
 		else {
 			$messageErreur = "Erreur lors de l'insertion ";
-		
-		header("Location: ../Erreur.php?erreur=".$messageErreur);
-		}*/
+			header("Location: ../Erreur.php?erreur=".$messageErreur);
+		}
 	}
 ?>
