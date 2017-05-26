@@ -18,7 +18,6 @@
 </head>
 
 <body>
-Créez un évènement !</br>
 
  <div class="container">
  <div class="row z-depth-4 blue-grey lighten-5">

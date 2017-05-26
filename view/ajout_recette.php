@@ -13,12 +13,11 @@
 
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/style.css" />
-<title>AJOUT EVNT</title>
+<title>AJOUT RECETTE</title>
 
 </head>
 
 <body>
-Rédigez une recette !</br>
 
  <div class="container">
  <div class="row z-depth-4 blue-grey lighten-5">
