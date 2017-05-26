@@ -2,6 +2,7 @@
 	require_once '../model/Rce.php';
 	require_once '../model/User.php';
 	//ini_set('display_errors',1);
+
 	$idrecipemodif = htmlspecialchars($_POST['idrecipemodif']);
 	$nomrecette = htmlspecialchars($_POST['nomrecette']);
 	$description = 	 htmlspecialchars($_POST['description']);
