@@ -131,35 +131,6 @@ class User
 		return $data; //Verifier si null
 	}
 	
-	public static function Get_User_All(){
-		require_once('Pdo.php');
-		$bdRunningTag=connexion();
-
-
-		$req = $bdRunningTag->prepare("SELECT * FROM user");
-		$req->execute();
-		while($data=$req->fetch())
-		{
-			$result[] = $data;
-		}
-
-		return $result; //Verifier si null
-	}
-	
-	public static function Get_id_From_String($stringWhere){
-		require_once('Pdo.php');
-		$bdRunningTag=connexion();
-		$req = $bdRunningTag->prepare("SELECT idUser FROM user WHERE 1 = 1 ".$stringWhere);
-		$req->execute();
-
-		$results = [];
-		while($data=$req->fetch())
-		{
-			$results[] = $data["idUser"];
-		}
-		return $results; //Verifier si null
-	}
-
 	public static function Update_user($name,$firstName,$gender,$mail,$id){
 		require_once('Pdo.php');
 		$bdRunningTag=connexion();

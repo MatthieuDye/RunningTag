@@ -47,8 +47,16 @@
 						  <option value="Homme">Homme</option>
 						  <option value="Femme">Femme</option>
 						</select>
-						<label for="gender">Sexe</label>
 					</div>		
+
+					<p>
+				      <input name="gender" type="radio" id="Homme" value="Homme" />
+				      <label for="Homme">Homme</label>
+				    </p>
+				    <p>
+				      <input name="gender" type="radio" id="Femme" value="Femme" />
+				      <label for="Femme">Femme</label>
+				    </p>
 
 					<div class="row">
 						<div class="input-field col s9">
