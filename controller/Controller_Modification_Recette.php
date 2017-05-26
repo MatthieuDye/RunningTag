@@ -19,7 +19,7 @@
 
 		
 		
-		if ($returnValue)
+		if (!$returnValue)
 		{
 			$messageValidation = "La recette a été modifiée avec succès !";
 			header("Location: ../Validation.php?validation=".$messageValidation);
