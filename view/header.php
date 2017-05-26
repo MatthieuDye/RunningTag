@@ -27,9 +27,25 @@
     </div>
 
     <ul class="tabs tabs-transparent">
-       <?php if (isConnected()) {?> <li><a href="Profil.php" > Mon profil  </a> </li> </li> <?php } ?>
+       <?php if (isConnected()) {?> 
+        <li><a class="tabn" href="Profil.php" data-activates="dropdown1" >Mon profil <i class="material-icons right">arrow_drop_down</i> </a> </li> <?php } ?>
         <li class="tab"><a href="Ajout.php">Ajouter un évènement</a></li>
         <li class="tab"><a href="Ajout_Recette.php">Ajouter une recette</a></li>
           
       </ul>
   </nav>
+
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a href="Suppression_Evenement.php">Mes évènements</a></li>
+  <li><a href="Suppression_Recette.php">Mes recettes</a></li>
+</ul>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="jQuery.js"></script>
+<script src="materialize/js/materialize.js"></script>
+<script>
+$( document ).ready(function(){
+  $(".dropdown-button").dropdown();
+  hover: false ;
+})
+</script>

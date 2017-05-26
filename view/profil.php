@@ -30,13 +30,20 @@
 			</ul>
 		</div>
 		<a href="Modification_User.php" class="waves-effect waves-light btn">Modifier des informations ?</a>
-		<?php require 'footer.php';?>
-		<?php require 'nav.php';?>
+		</br>
+		<a href="Suppression_Evenement.php" class="waves-effect waves-light btn">Mes évènements</a>
+		</br>
+		<a href="Suppression_Recette.php" class="waves-effect waves-light btn">Mes articles</a>
+	
 
+	
+		
+		
 	</body>
 
 
 </html>
+<?php require 'footer.php';?>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
 <script src="jQuery.js"></script>

@@ -44,10 +44,14 @@ Rédigez une recette !</br>
             </div>
         </div>
       </form>
+      </div>
+ </div>
+  </body>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</html>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 
           <?php require 'view/footer.php';?>
-  </body>
-</html>

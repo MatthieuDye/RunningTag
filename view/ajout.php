@@ -55,10 +55,15 @@ Créez un évènement !</br>
               </button>
             </div>
         </div>
+
       </form>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      </div>
+      </div>
+  </body>
+
+
+</html>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
 
           <?php require 'footer.php';?>
-  </body>
-</html>
