@@ -3,10 +3,10 @@
 	require_once '../model/User.php';
 	//ini_set('display_errors',1);
 	$idrecipemodif = htmlspecialchars($_POST['idrecipemodif']);
-	$nomorga = htmlspecialchars($_POST['nomorga']);
-	
+	$nomrecette = htmlspecialchars($_POST['nomrecette']);
+	$description = 	 htmlspecialchars($_POST['description']);
 
-	if (empty($nomorga) || empty($nomevent)  ) {
+	if (empty($nomrecette) || empty($description)  ) {
 		$messageErreur = "Vous n'avez pas remplis tous les champs ! Merci de completer les champs manquants ! ";
 		
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
@@ -14,7 +14,7 @@
 	
 	else {
 		//$id = User::Get_User_Id($_COOKIE['codeconnexion']);
-		Rce::Update_Rce($nomevent,$nomorga,$description,$lieu,$idrecipemodif);	
+		Rce::Update_Rce($nomrecette,$description,$idrecipemodif);	
 
 		$messageValidation = "L'évènement a été créé avec succès !";
 		header("Location: ../Validation.php?validation=".$messageValidation);

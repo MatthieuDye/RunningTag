@@ -44,12 +44,12 @@
 		*/
 	}
 
-		public static function Update_Evt($nomevent,$nomorga,$description,$lieu,$idevent) {
+		public static function Update_Rce($nomrecette, $texterecette,$idauteur) {
 		require_once('Pdo.php');
 
 		$bdRunningTag = connexion();
 
-		$req = $bdRunningTag->prepare('UPDATE event SET libelleEvt = :nomevent, orgaEvt = :nomorga, lieuEvt = :lieu, commentEvt = :description WHERE idEvt = :idevent');
+		$req = $bdRunningTag->prepare('UPDATE recipe SET libelleEvt = :nomevent, orgaEvt = :nomorga, lieuEvt = :lieu, commentEvt = :description WHERE idEvt = :idevent');
 
 		$req->bindParam(':nomevent',$nomevent);
 		$req->bindParam(':nomorga',$nomorga);

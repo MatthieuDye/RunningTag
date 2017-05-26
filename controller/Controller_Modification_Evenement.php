@@ -24,7 +24,7 @@
 		//$id = User::Get_User_Id($_COOKIE['codeconnexion']);
 		Evt::Update_Evt($nomevent,$nomorga,$description,$lieu,$ideventmodif);	
 
-		$messageValidation = "L'évènement a été créé avec succès !";
+		$messageValidation = "L'évènement a été modifié avec succès !";
 		header("Location: ../Validation.php?validation=".$messageValidation);
 		/*
 		if ($returnValue)
