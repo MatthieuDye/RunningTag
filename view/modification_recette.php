@@ -21,7 +21,7 @@
 
 		$bdrunningtag = connexion();
 
-		$eventmodif = $bdrunningtag->query('SELECT * from event WHERE idEvt = "'.$idrecipemodif.'"');
+		$eventmodif = $bdrunningtag->query('SELECT * from recipe WHERE idRcpe = "'.$idrecipemodif.'"');
 		$donnees = $eventmodif->fetch();
 		?>
 				<h5 class="center-align">Modifications</h5>
