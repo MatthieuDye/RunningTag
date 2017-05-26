@@ -20,6 +20,7 @@
   </br>
    <div class="container">
    <div class="row z-depth-4 blue-grey lighten-5">
+
           <form class="col s12" method="post" action="controller/Controller_Ajout.php">
           
           <div class="row">
@@ -49,7 +50,7 @@
 
           <div class="row">
               <div class="input-field col s9">
-                <button class="btn waves-effect waves-light" id="submit" value="valider">Inscription
+                <button class="btn waves-effect waves-light" id="submit" value="valider">Valider
                   <i class="material-icons right">send</i>
                 </button>
               </div>

@@ -56,7 +56,7 @@
 
 					<div class="row">
 						<div class="input-field col s9">
-							<textarea id="description" name="description" type="description" class="validate" value=<?php echo $donnees['commentEvt'] ?>> </textarea> 
+							<textarea id="description" name="description" type="description" class="validate" > <?php echo $donnees['commentEvt'] ?></textarea> 
 							<label for="description" data-error="wrong" data-success="right">Description </label>
 						</div>
 					</div>

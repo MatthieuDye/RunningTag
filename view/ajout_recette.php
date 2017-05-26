@@ -54,4 +54,6 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 
-          <?php require 'view/footer.php';?>
+<?php require 'view/footer.php';?>
+<script type="text/javascript"> $('#textarea1').val('New Text');
+$('#textarea1').trigger('autoresize'); </script>
