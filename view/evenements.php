@@ -5,6 +5,14 @@
 		<head>
 
 		<meta charset="utf-8" />
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<?php require 'header.php'; ?>
+
 		<link rel="stylesheet" href="css/style.css" />
 		<title>EVENEMENT</title>
 
@@ -13,8 +21,7 @@
 
 			<body>	
 
-			<h1 id="up" > Début du doc </h1>
-			<a href="#down" > <image src="medias/downarrow.png" ></a>
+			
 			</br>
 			</br>	
 			<?php require_once 'model/Pdo.php';
@@ -36,10 +43,7 @@
 			?>		
 
 			</br>
-			<a href="#up" > <image src="medias/uparrow.png" alt="Cliquez pour retourner au début du doc" title="Vous vous attendiez à quoi?"></a>
-
-			<h1 id="down" > Fin du doc </h1>
-
+			
 			<?php include 'footer.php' ?>
 			</body>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

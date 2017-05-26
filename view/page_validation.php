@@ -5,8 +5,14 @@
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
 		<meta name="Description" content="Page de validation">
-		<meta name="Keywords" content="test riasec hollande personnalité polytech montpellier questionnaire intérêts professionnels">
-		<meta name="Subject" content="Test Riasec ">
+		 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<?php require 'header.php'; ?>
+
 		<meta name="Copyright" content="PolytechMontpellier">
 		<meta name="Author" content="PolytechMontpellier">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -3,6 +3,13 @@
 <html>
 
 <head>
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<?php require 'header.php'; ?>
 
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/style.css" />
@@ -12,8 +19,7 @@
 
 
 <body>
-<h1 id="up" > Début du doc </h1>
-<a href="#down" > <image src="medias/downarrow.png" ></a>
+
 </br>
 </br>
 <?php
@@ -42,7 +48,7 @@ $premiere_new->closeCursor(); // Termine le traitement de la requête
 
 </br>
 
-<a href="#up" > <image src="medias/uparrow.png" alt="Cliquez pour retourner au début du doc" title="Vous vous attendiez à quoi?"></a>
+
 </br>
 </br>
 
@@ -50,7 +56,6 @@ $premiere_new->closeCursor(); // Termine le traitement de la requête
 
 </br>
 
-<h1 id="down" > Fin du doc </h1>
 
 		<?php require 'footer.php';?>
 	

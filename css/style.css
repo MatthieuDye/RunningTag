@@ -51,21 +51,15 @@ body
 {
 	color: blue
 }
-
+/*
 #accueil
 {
 	background-image: url("/medias/together.jpg");
-    background-attachment: fixed; /* The background will remain fixed */
+    background-attachment: fixed; 
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
-a:hover /* Appearance of links when hovered over */
-{
-   text-decoration: underline;
-   color: green;
-}
+*/
 
 #menu 
 {
