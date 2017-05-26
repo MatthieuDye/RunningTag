@@ -26,7 +26,7 @@
 		}	
 		
 		else {
-			$messageErreur = "Erreur lors de l'insertion ";
+			$messageErreur = "Erreur lors de la modification ";
 			header("Location: ../Erreur.php?erreur=".$messageErreur);
 		}
 	}
