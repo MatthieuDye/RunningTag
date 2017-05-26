@@ -24,15 +24,19 @@
 	$donnees = $eventmodif->fetch();
 	?>
 			<h5 class="center-align">Modifications</h5>
+
+			<div class="container">
 			<div class="row z-depth-4 blue-grey lighten-5">
+
 				<form class="col s12" method="post" action="/controller/Controller_Modification_Evenement.php">
 
-				<input type="hidden" name="ideventmodif" value="<?php echo $donnees['idEvt']?>" />
+					<input type="hidden" name="ideventmodif" value="<?php echo $donnees['idEvt']?>" />
 
 					<div class="row">
 						<div class="input-field col s9">
-							<input id="nomevent" name="nomevent" type="text" class="validate" value=<?php echo $donnees['libelleEvt'] ?>>
 							<label for="nomevent" data-error="wrong" data-success="right">Nom de l'évènement</label>
+							<input id="nomevent" name="nomevent" type="text" class="validate" value=<?php echo $donnees['libelleEvt'] ?>>
+							
 						</div>
 					</div>
 
@@ -67,6 +71,7 @@
 				</form>
 			</div>
 		</div>
+	</div>
 		<?php require 'footer.php';?>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>

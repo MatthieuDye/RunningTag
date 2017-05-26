@@ -19,7 +19,7 @@
 
 
 			<body>	
-
+			<div class="container">
 			<?php require_once 'model/Pdo.php';
 				 require_once 'model/User.php';
 				 $id = User::Get_User_Id($_COOKIE['codeconnexion']);
@@ -36,13 +36,15 @@
 			  
 			  <form class="supprimer" method="post" action="controller/Controller_Suppression_Evenement.php">
 			  <input type="hidden" name="ideventsupp" value="<?php echo $donnees['idEvt']?>" />
-			  <button class="btn-supprimer" name="supprimer">Supprimer ?</button>
+			  <button class="btn waves-effect waves-light" name="supprimer">Supprimer ?</button>
 			  </form>
 			  </p>	
 
+		
+		
 			  <form class="modifier" method="post" action="../Modification_Evenement.php">
 			  <input type="hidden" name="ideventmodif" value="<?php echo $donnees['idEvt']?>" />
-			  <button class="btn-modif" name="modifier">Modifier ?</button>
+			  <button  class="btn waves-effect waves-light" name="modifier">Modifier ?</button>
 			  </form>
 			  </p>	
 
@@ -51,7 +53,7 @@
 			?>		
 
 
-
+			</div>
 
 
 			</body>
@@ -64,7 +66,6 @@
 
       <!--Let browser know website is optimized for mobile-->
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<?php require 'header.php'; ?>
 <?php require 'footer.php'; ?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
