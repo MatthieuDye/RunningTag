@@ -19,7 +19,7 @@
 
 
 <body>
-
+<dix class="container">
 </br>
 </br>
 <?php
@@ -55,7 +55,7 @@ $premiere_new->closeCursor(); // Termine le traitement de la requête
 </br>
 
 </br>
-
+</dix>
 </body>
 <?php require 'footer.php';?>
   

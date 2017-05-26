@@ -1,6 +1,5 @@
 <?php require_once 'controller/Controller_Test_User.php';
       require_once 'model/User.php'; 
-      require 'css/css_config.php';
       ?>
 
 <link rel="stylesheet" href="css/style.css" />

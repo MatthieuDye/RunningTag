@@ -18,7 +18,7 @@
 
 
 		<body>
-		
+		<div class="container">
 		</br>
 		</br>
 		<?php
@@ -53,7 +53,7 @@
 		</br>
 
 		</br>
-
+		</div>
 		</body>
 
 	<?php require 'footer.php';?>

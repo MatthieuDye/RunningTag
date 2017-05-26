@@ -30,7 +30,7 @@ else
 	}
 	else
 	{
-		$messageErreur = "Email ou mot de passe erroné ".($mail).($mdp);;
+		$messageErreur = "Email ou mot de passe erroné ";
 	
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
