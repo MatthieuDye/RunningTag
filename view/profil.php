@@ -29,11 +29,11 @@
 			    <li class="collection-item"><?php echo $info['mailUser'] ?></li>
 			</ul>
 		</div>
-		<a href="Modification_User.php" class="waves-effect waves-light btn">Modifier des informations ?</a>
+		<a href="Modification_User.php" class="waves-effect waves-light btn">Modifier des informations </a>
 		</br>
 		<a href="Suppression_Evenement.php" class="waves-effect waves-light btn">Mes évènements</a>
 		</br>
-		<a href="Suppression_Recette.php" class="waves-effect waves-light btn">Mes articles</a>
+		<a href="Suppression_Recette.php" class="waves-effect waves-light btn">Mes recettes</a>
 	
 
 	
