@@ -44,18 +44,17 @@
 		*/
 	}
 
-		public static function Update_Rce($nomrecette, $texterecette,$idauteur) {
+		public static function Update_Rce($nomrecette, $texterecette,$idrecette) {
 		require_once('Pdo.php');
 
 		$bdRunningTag = connexion();
 
-		$req = $bdRunningTag->prepare('UPDATE recipe SET libelleEvt = :nomevent, orgaEvt = :nomorga, lieuEvt = :lieu, commentEvt = :description WHERE idEvt = :idevent');
+		$req = $bdRunningTag->prepare('UPDATE recipe SET titleRcpe = :nomrecette, contentRcpe = :texterecette WHERE idRcpe = :idrecette');
 
-		$req->bindParam(':nomevent',$nomevent);
-		$req->bindParam(':nomorga',$nomorga);
-		$req->bindParam(':description',$description);
-		$req->bindParam(':lieu',$lieu);
-		$req->bindParam(':idevent',$idevent);
+		$req->bindParam(':nomrecette',$nomrecette);
+		$req->bindParam(':texterecette',$texterecette);
+		$req->bindParam(':idrecette',$idrecette);
+		
 		$returnValue = $req->execute();
 		/*
 		if($returnValue) {
