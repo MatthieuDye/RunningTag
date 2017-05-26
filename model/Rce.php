@@ -27,7 +27,7 @@
 
 		$bdRunningTag = connexion();
 
-		$req = $bdRunningTag->prepare('DELETE from recipe WHERE idAuthor = :idauteur && idRce = :idrecette ' );
+		$req = $bdRunningTag->prepare('DELETE from recipe WHERE idAuthor = :idauteur && idRcpe = :idrecette ' );
 
 		$req->bindParam(':idauteur',$idauteur);		
 		$req->bindParam(':idrecette',$idrecette);

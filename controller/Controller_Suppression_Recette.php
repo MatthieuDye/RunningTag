@@ -8,10 +8,9 @@
 		$id = User::Get_User_Id($_COOKIE['codeconnexion']);
 		Rce::Delete_Rce($idrecipesupp,$id);	
 
-		var_dump($id);
-		var_dump($idrecipesupp)
 		
-		/*
+		
+		
 		if (!$returnValue)
 		{
 			header("Location: ../Suppression_Recette.php");	
@@ -22,5 +21,4 @@
 			header("Location: ../Erreur.php?erreur=".$messageErreur);
 
 		}
-	*/
 ?>
