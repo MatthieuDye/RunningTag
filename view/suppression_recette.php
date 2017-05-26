@@ -1,8 +1,62 @@
-<?php
-	require_once("controller/Controller_Page_Suppression_Recette.php");
-?>
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<?php require 'header.php'; ?>
+
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>MES RECETTES</title>
+
+		</head>
 
 
+			<body>	
+
+			<?php require_once 'model/Pdo.php';
+				 require_once 'model/User.php';
+				 $id = User::Get_User_Id($_COOKIE['codeconnexion']);
+
+   			$bdRunningTag = connexion();
+
+			 $premier_recette = $bdRunningTag->query(" SELECT * from recipe WHERE '$id'=event.idOrga ");
+			 while ($donnees = $premier_event->fetch())
+			 {
+			  ?>
+			  <p> Voici l'évènement n°<?php echo $donnees['idEvt']; ?> , organisé par <?php echo $donnees['orgaEvt']; ?>, à <?php echo $donnees['lieuEvt']; ?></br>
+			  <?php echo $donnees['libelleEvt']; ?></br>
+			  <?php echo $donnees['commentEvt']; ?></br>
+			  
+			  <form class="supprimer" method="post" action="controller/Controller_Suppression_Evenement.php">
+			  <input type="hidden" name="ideventsupp" value="<?php echo $donnees['idEvt']?>" />
+			  <button class="btn-supprimer" name="supprimer">Supprimer ?</button>
+			  </form>
+			  </p>	
+
+			  <form class="modifier" method="post" action="../Modification_Evenement.php">
+			  <input type="hidden" name="ideventmodif" value="<?php echo $donnees['idEvt']?>" />
+			  <button class="btn-modif" name="modifier">Modifier ?</button>
+			  </form>
+			  </p>	
+
+			<?php
+			 } $premier_event->closeCursor(); // Termine le traitement de la requête
+			?>		
+
+
+
+
+
+			</body>
+
+	</html>
 
 
 

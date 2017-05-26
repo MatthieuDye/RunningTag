@@ -1,6 +1,6 @@
 <?php 
 	require_once '../model/Rce.php';
-
+	require_once '../model/User.php';
 	//ini_set('display_errors',1);
 
 	$nomrce = htmlspecialchars($_POST['nomrce']);
@@ -14,20 +14,21 @@
 	}
 	
 	else {
-		Rce::Add_Rce($nomrce,$contentrce);	
+		$id = User::Get_User_Id($_COOKIE['codeconnexion']);
+		Rce::Add_Rce($nomrce,$contentrce,$id);	
 
-		//$messageValidation = "La recette a été ajoutée avec succès !";
-		//header("Location: ../Validation.php?validation=".$messageValidation);
+		
 		
 		if (!$returnValue)
 		{
-			header("Location: ../Accueil.php"); // ramener à une page de confirmation	
+			$messageValidation = "La recette a été ajoutée avec succès !";
+			header("Location: ../Validation.php?validation=".$messageValidation);
 		}	
 		
 		else {
 			$messageErreur = "Erreur lors de la création de la recette ";
 		
-		header("Location: ../Erreur.php?erreur=".$messageErreur);
+			header("Location: ../Erreur.php?erreur=".$messageErreur);
 
 		}
 	}

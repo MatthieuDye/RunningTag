@@ -15,6 +15,7 @@ $( document ).ready(function) {
 
 	$(".dropdown-button").dropdown();
 }
+
 (function( global, factory ) {
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
